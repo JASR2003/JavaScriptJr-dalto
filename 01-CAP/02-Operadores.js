@@ -12,3 +12,16 @@
 
 // -- decremento
 // ++ incremento
+
+//Comparación
+
+// == igual a
+// === identico a (cabe aclarar que no es lo mismo == que === ya que el tercer = hace que se compare hasta el tipo de valor)
+// != no es igual a
+// !== no es identico a
+// >= mayor o igual que
+// > mayor que
+// <= menor o igual que
+// < menor que
+
+//Lógicos
