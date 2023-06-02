@@ -1,6 +1,7 @@
 //Bloque de código que se ejecuta solo si la condición se cumple
 
 //IF, ELSE IF y ELSE, consisten en si esto es verdad se cumple la condición y así hasta que se cumpla, ejemplo
+let edad = 19;
 
 if (edad < 18) {
     console.log(`Eres menor de edad`)
