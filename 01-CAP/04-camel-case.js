@@ -1,0 +1,1 @@
+//Cuando hay palabras juntas como una variable o función, se usa el camel case, ej setElementById
