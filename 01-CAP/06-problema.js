@@ -77,14 +77,13 @@
 //OR
 
 const deninirCompra = (numberMoney) => {
-    let din = prompt(`Dinero de ${numberMoney}`);
-    din = parseFloat(din);
-    if (din >= 0.6 && din < 1) return (`${numberMoney} compra helado de agua y te sobran ${din - 0.6}`);
-    if (din >= 1 && din < 1.6) return (`${numberMoney} compra helado de crema y te sobran ${din - 1}`);
-    if (din >= 1.6 && din < 1.7) return (`${numberMoney} compra helado de heladix y te sobran ${din - 1.6}`);
-    if (din >= 1.7 && din < 1.8) return (`${numberMoney} compra helado de heladovich y te sobran ${din - 1.7}`);
-    if (din >= 1.8 && din < 2.9) return (`${numberMoney} compra helado de helardo y te sobran ${din - 1.8}`);
-    if (din >= 2.9) return (`${numberMoney} compra el pote de 1/4KG o el potecito de helado con confites y te sobran ${din - 2.9}`);
+    let din = parseFloat(prompt(`Dinero de ${numberMoney}`));
+    if (din >= 0.6 && din < 1) return (`${numberMoney} compra helado de agua y te sobran ${(din - 0.6).toFixed(2)}`);
+    if (din >= 1 && din < 1.6) return (`${numberMoney} compra helado de crema y te sobran ${(din - 1).toFixed(2)}`);
+    if (din >= 1.6 && din < 1.7) return (`${numberMoney} compra helado de heladix y te sobran ${(din - 1.6).toFixed(2)}`);
+    if (din >= 1.7 && din < 1.8) return (`${numberMoney} compra helado de heladovich y te sobran ${(din - 1.7).toFixed(2)}`);
+    if (din >= 1.8 && din < 2.9) return (`${numberMoney} compra helado de helardo y te sobran ${(din - 1.8).toFixed(2)}`);
+    if (din >= 2.9) return (`${numberMoney} compra el pote de 1/4KG o el potecito de helado con confites y te sobran ${(din - 2.9).toFixed(2)}`);
     else return (`${numberMoney} no te alcanza para ninguno, trae más dinero para la próxima`);
 }
 
