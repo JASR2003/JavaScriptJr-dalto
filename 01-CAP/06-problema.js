@@ -69,3 +69,19 @@ if (dineroPedro >= 0.6 && dineroPedro < 1) {
 } else {
     alert("Pedro no te alcanza para ninguno, trae más dinero para la próxima")
 }
+
+//OR
+
+const deninirCompra = (numberMoney) => {
+    let din = prompt(`Dinero de ${numberMoney}`);
+    if (din >= 0.6 && din < 1) return (`${numberMoney} compra helado de agua`);
+    if (din >= 1 && din < 1.6) return (`${numberMoney} compra helado de crema`);
+    if (din >= 1.6 && din < 1.7) return (`${numberMoney} compra helado de heladix`);
+    if (din >= 1.7 && din < 1.8) return (`${numberMoney} compra helado de heladovich`);
+    if (din >= 1.8 && din < 2.9) return (`${numberMoney} compra helado de helardo`);
+    else return (`${numberMoney} no te alcanza para ninguno, trae más dinero para la próxima`);
+}
+
+alert(deninirCompra("Cofla"));
+alert(deninirCompra("Pedro"));
+alert(deninirCompra("Roberto"));
