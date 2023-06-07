@@ -24,4 +24,4 @@ function saludar() {
 
 let saludo = saludar();
 
-document.write(saludo); // va a tirar el alert pero lo que va a escribir en el document será el valor del return y el return es el ultimo elemento que muestra, si hay algo despues del return no se va a ejecutar
+alert(saludo); // va a tirar el alert pero lo que va a escribir en el document será el valor del return y el return es el ultimo elemento que muestra, si hay algo despues del return no se va a ejecutar
