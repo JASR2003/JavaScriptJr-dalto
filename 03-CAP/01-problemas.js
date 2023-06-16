@@ -66,3 +66,27 @@ document.write(`
     ${telefono2.mostrarInfo()} </br>
     ${telefono3.mostrarInfo()} </br>
 `)
+
+class altaGama extends telefonos {
+    constructor(color, peso, tamanoTelefono, resolucionCamara, RAM, resolucionCamaraExtra) {
+        super(color, peso, tamanoTelefono, resolucionCamara, RAM);
+        this.resolucionCamaraExtra = resolucionCamaraExtra;
+    }
+    videoCamaraLenta() {
+        alert("estás grabando en camara lenta");
+    }
+    reconocimentoFacial(){
+        alert("Reconocimiento facial hecho");
+    }
+    mostrarInfoAltaGama(){
+        return `${this.mostrarInfo()} resolución de cámara extra: <b>${this.resolucionCamaraExtra}</b> </br>`
+    }
+}
+
+const telefono4 = new altaGama('azul', '230gr', "6.8'", '108MP', '12ram', '20MP');
+const telefono5 = new altaGama('blanco', '210gr', "6.62'", '88MP', '8ram', "10MP");
+
+document.write(`
+    ${telefono4.mostrarInfoAltaGama()} </br>
+    ${telefono5.mostrarInfoAltaGama()} </br>
+`)
