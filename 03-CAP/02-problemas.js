@@ -37,7 +37,7 @@ class Apps {
         Peso: <b>${this.peso}</b> </br>
         `
     }
-}
+};
 
 const app1 = new Apps("35K", "4.1/5", "859MB");
 const app2 = new Apps("348K", "4.5/5", "931MB");
@@ -62,4 +62,4 @@ document.write(`
     ${app1.mostrarDatos()} </br>
     ${app2.mostrarDatos()} </br>
     ${app3.mostrarDatos()} </br>
-`)
+`);
