@@ -19,6 +19,6 @@ console.log(cadena.endsWith(cadena2)); // muestra en consola "false"
 
 console.log(cadena.includes(cadena2)); // muestra en consola "true"
 
-// indexOf() -- si una cadena puede encontrarse dentro de otra cadena nos va a devolver la posición donde empieza
+// indexOf() -- si una cadena puede encontrarse dentro de otra cadena nos va a devolver la posición donde empieza, si no está devuelve -1
 
 console.log(cadena.indexOf("de prueba")); // muestra en consola "7" ya que ahí está la d de "de prueba"
