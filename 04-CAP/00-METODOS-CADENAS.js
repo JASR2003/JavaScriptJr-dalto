@@ -2,5 +2,5 @@ let cadena = 'cadena de prueba';
 
 //concat() -- junta dos o más cadenas y retorna una sola
 
-console.log(cadena.concat(` concatenado`));
+console.log(cadena.concat(` concatenado`)); // muestra en consola "cadena de prueba concatenado"
 
