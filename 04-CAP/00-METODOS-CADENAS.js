@@ -1,4 +1,4 @@
-let cadena = 'cadena de prueba';
+let cadena = 'cadena de prueba prueba';
 let cadena2 = 'cadena';
 
 //concat() -- junta dos o más cadenas y retorna una sola
@@ -19,6 +19,10 @@ console.log(cadena.endsWith(cadena2)); // muestra en consola "false"
 
 console.log(cadena.includes(cadena2)); // muestra en consola "true"
 
-// indexOf() -- si una cadena puede encontrarse dentro de otra cadena nos va a devolver la posición donde empieza, si no está devuelve -1
+// indexOf() -- si una cadena puede encontrarse dentro de otra cadena nos va a devolver la posición donde empieza la primera palabra que se pase, si no está devuelve -1
 
-console.log(cadena.indexOf("de prueba")); // muestra en consola "7" ya que ahí está la d de "de prueba"
+console.log(cadena.indexOf("prueba")); // muestra en consola "10" ya que ahí está la  de "prueba"
+
+// lastIndexOf() -- si una cadena puede encontrarse dentro de otra cadena nos va a devolver la posición donde empieza la ultima palabra que se pase, si no está devuelve -1
+
+console.log(cadena.lastIndexOf("prueba")); // muestra en consola "17" ya que ahí está la p de "prueba"
