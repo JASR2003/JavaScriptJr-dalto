@@ -34,3 +34,7 @@ console.log(cadena.padStart(50, "homero")); // regresa "homerohomerohomerohomero
 // padEnd(10, "1") -- lo mismo pero en vez del comienzo es al final
 
 console.log(cadena.padEnd(50, "homero")); // regresa "cadena de prueba pruebahomerohomerohomerohomerohom"
+
+// repeat(2) -- repite la cadena la cantidad de veces que uno le pida
+
+console.log(cadena.repeat(3)); // regresa "cadena de prueba pruebacadena de prueba pruebacadena de prueba prueba"
