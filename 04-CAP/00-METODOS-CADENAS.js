@@ -26,3 +26,11 @@ console.log(cadena.indexOf("prueba")); // muestra en consola "10" ya que ahí es
 // lastIndexOf() -- si una cadena puede encontrarse dentro de otra cadena nos va a devolver la posición donde empieza la ultima palabra que se pase, si no está devuelve -1
 
 console.log(cadena.lastIndexOf("prueba")); // muestra en consola "17" ya que ahí está la p de "prueba"
+
+// padStart(10, "1") -- si el texto tiene por ejemplo 3 caracteteres, el padStart va a rellenar con siete "1" para que el total de caracteres en la cadena sea 10 caracteres
+
+console.log(cadena.padStart(50, "homero")); // regresa "homerohomerohomerohomerohomcadena de prueba prueba"
+
+// padEnd(10, "1") -- lo mismo pero en vez del comienzo es al final
+
+console.log(cadena.padEnd(50, "homero")); // regresa "cadena de prueba pruebahomerohomerohomerohomerohom"
