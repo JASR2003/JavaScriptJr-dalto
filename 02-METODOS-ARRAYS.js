@@ -44,6 +44,7 @@ console.log(nombres);
 
 // Accesores
 
-
+let nombresJoin = nombres.join(' - '); // como el toString los convierte en string pero puedes añadir un elemento entre cada posicion del array
+console.log(nombresJoin); // josé - manolo - eustaquio
 
 // Repeticion
