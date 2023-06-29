@@ -56,8 +56,16 @@ console.log(nombresSlice);
 
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-const oddNumbers = numbers.filter(function(number) {
+const oddNumbers = numbers.filter((number) => {
   return number % 2 !== 0;
 });
 
 console.log(oddNumbers); // Output: [1, 3, 5, 7, 9]
+
+// forEach() en JavaScript itera sobre los elementos de un array y ejecuta una función de retorno de llamada para cada elemento. Es útil para realizar operaciones en cada elemento del array y no afecta el array original.
+
+const numbersFE = [1, 2, 3, 4, 5];
+
+numbers.forEach(function(number) {
+  console.log(number);
+});
