@@ -20,7 +20,7 @@ console.log(nombres);
 
 // unshift() -- agrega uno o más elementos al inicio del array,y devuelve la nueva longitud del array
 
-nombres.unshift('josé'); // añade eustquio de los nombres ya que agrega al ultimo elemento del array
+nombres.unshift('josé'); // añade josé de los nombres ya que agrega al priemr elemento del array
 console.log(nombres);
 
 // reverse() -- invierte el orden de los elementos de un array
@@ -46,5 +46,8 @@ console.log(nombres);
 
 let nombresJoin = nombres.join(' - '); // como el toString los convierte en string pero puedes añadir un elemento entre cada posicion del array
 console.log(nombresJoin); // josé - manolo - eustaquio
+
+let nombresSlice = nombres.slice(2,3); // retorna mateo ya que empieza en la posicion 2 y no cuenta la 3
+console.log(nombresSlice);
 
 // Repeticion
