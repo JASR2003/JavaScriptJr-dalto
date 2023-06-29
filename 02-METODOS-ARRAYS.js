@@ -51,3 +51,13 @@ let nombresSlice = nombres.slice(2,3); // retorna mateo ya que empieza en la pos
 console.log(nombresSlice);
 
 // Repeticion
+
+//filter() en JavaScript selecciona elementos de un array que cumplen ciertas condiciones y los devuelve en un nuevo array. Es útil para procesar grandes cantidades de datos y extraer solo los elementos que cumplen ciertos criterios.
+
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+const oddNumbers = numbers.filter(function(number) {
+  return number % 2 !== 0;
+});
+
+console.log(oddNumbers); // Output: [1, 3, 5, 7, 9]
