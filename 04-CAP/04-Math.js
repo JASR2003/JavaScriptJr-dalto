@@ -28,4 +28,8 @@ console.log("homero " + getRandomNumber(50,100)); // va a devolver un numero ent
 
 // Math.round() devuelve el valor de un numero redondeado al numero entero más cercano
 
-console.log(Math.round(3.2), Math.round(3.6)) //nos devuelve en la primera 3, y en la segunda 4
+console.log(Math.round(3.4), Math.round(3.5)); //nos devuelve en la primera 3, y en la segunda 4
+
+// Math.floor() es el número que se desea redondear hacia abajo.
+
+console.log(Math.floor(3.9)); // dará 3 a diferencia del ceil que daría 4 y el round es a partir del .5
