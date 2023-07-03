@@ -25,3 +25,7 @@ function getRandomNumber(min, max) {
 } // En el caso de esta función es para poner un parametro de minimo y maximo numero
 
 console.log("homero " + getRandomNumber(50,100)); // va a devolver un numero entre 50 y 100
+
+// Math.round() devuelve el valor de un numero redondeado al numero entero más cercano
+
+console.log(Math.round(3.2), Math.round(3.6)) //nos devuelve en la primera 3, y en la segunda 4
