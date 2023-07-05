@@ -17,8 +17,8 @@ const mostrarInfo = (materia)=>{
     let informacion = obtInfo(materia);
 
 if (informacion !== false) {
-    let profesor = obtInfo(materia)[0][0];
-    let alumnos = obtInfo(materia)[0];
+    let profesor = informacion[0][0];
+    let alumnos = informacion[0];
     alumnos.shift();
     document.write(`Profesor: ${profesor} </br>
     Materia: ${informacion[1]} </br>
