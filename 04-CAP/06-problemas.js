@@ -2,7 +2,7 @@ const obtInfo = (materia) => {
     materiasClase = {
         fisica: ["Perez", "pedro", "maria", "daniela", "cofla", "jorge"],
         quimica: ["Rodriguez", "pedro","jose", "maria", "daniela"],
-        matematicas: ["Suarez", "pedro","jose", "daniela", "cofla", "jorge"],
+        matematicas: ["Suarez", "pedro", "daniela", "cofla", "jorge"],
         programacion: ["Ramirez", "pedro","jose", "maria", "daniela", "cofla", "jorge"],
     }
     if(materiasClase[materia] !== undefined){
@@ -45,3 +45,8 @@ mostrarInfo("matematicas");
 mostrarInfo("programacion");
 
 document.write(cantidadClases("cofla"));
+document.write(cantidadClases("pedro"));
+document.write(cantidadClases("jose"));
+document.write(cantidadClases("daniela"));
+document.write(cantidadClases("maria"));
+document.write(cantidadClases("jorge"));
