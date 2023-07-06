@@ -19,6 +19,7 @@ const inscribir = ()=>{
         let lista = document.createElement("p");
         lista.innerHTML = `Los alumnos de la materia ${materia} son: <br>
         ${materiasClase[materia].join(', ')} <br><br>`;
+        message.innerHTML = '';
         message.append(mensaje, lista);
     } else {
         alumnosActuales.push(alumno);
@@ -28,6 +29,7 @@ const inscribir = ()=>{
         let lista = document.createElement("p");
         lista.innerHTML = `Los alumnos de la materia ${materia} son: <br>
         ${materiasClase[materia].join(', ')} <br><br>`;
+        message.innerHTML = '';
         message.append(mensaje, lista);
     }
 }
