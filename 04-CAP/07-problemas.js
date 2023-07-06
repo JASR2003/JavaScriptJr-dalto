@@ -15,50 +15,19 @@ const inscribir = ()=>{
 
     if (alumnosActuales.length > 20) {
         let mensaje = document.createElement("p");
-        mensaje.textContent = `<br>Lo siento, desafortunadamente ${alumno} no podrá ser inscrito en ${materia}, esto se debe a que la capacidad máxima de alumnos ya fue alcanzada`;
+        mensaje.textContent = `Lo siento, desafortunadamente ${alumno} no podrá ser inscrito en ${materia}, esto se debe a que la capacidad máxima de alumnos ya fue alcanzada`;
         let lista = document.createElement("p");
-        lista.innerHTML += `Los alumnos de la materia ${materia} son: <br>
-        ${materiasClase[materia].join(", ")} <br><br>`;
+        lista.innerHTML = `Los alumnos de la materia ${materia} son: <br>
+        ${materiasClase[materia].join(', ')} <br><br>`;
         message.append(mensaje, lista);
     } else {
         alumnosActuales.push(alumno);
-        if (materia == "fisica") {
-            materiasClase = {
-		        fisica: alumnosActuales,
-		        programacion: materia['programacion'],
-		        matematicas: materia['matematicas'],
-		        quimica:materia['quimica']
-	        }
-        }
-        else if (materia == "programacion") {
-            materiasClase = {
-		        fisica: materia['fisica'],
-		        programacion: alumnosActuales,
-		        matematicas: materia['matematicas'],
-		        quimica:materia['quimica']
-	        }
-        }
-        else if (materia == "matematicas") {
-            materiasClase = {
-		        fisica: materia['fisica'],
-		        programacion: materia['programacion'],
-		        matematicas: alumnosActuales,
-		        quimica:materia['quimica']
-	        }
-        }
-        else if (materia == "quimica") {
-            materiasClase = {
-		        fisica: materia['fisica'],
-		        programacion: materia['programacion'],
-		        matematicas: materia['matematicas'],
-		        quimica:alumnosActuales
-	        }
-        }
+        materiasClase[materia] = alumnosActuales;
         let mensaje = document.createElement("p");
-        mensaje.innerHTML = `<br>Felicidades, el nuevo estudiante <b>${alumno}</b> acaba de ser inscrito a la materia de <b>${materia}</b>`;
+        mensaje.innerHTML = `Felicidades, el nuevo estudiante <b>${alumno}</b> acaba de ser inscrito a la materia de <b>${materia}</b>`;
         let lista = document.createElement("p");
-        lista.innerHTML += `Los alumnos de la materia ${materia} son: <br>
-        ${materiasClase[materia].join(", ")} <br><br>`;
+        lista.innerHTML = `Los alumnos de la materia ${materia} son: <br>
+        ${materiasClase[materia].join(', ')} <br><br>`;
         message.append(mensaje, lista);
     }
 }
