@@ -1,0 +1,5 @@
+// console.group() agrupa los mensajes de registro en la consola del navegador de manera organizada y jerárquica. Es útil para reducir el desorden en la consola y facilitar el análisis del código.
+
+// console.groupEnd() se utiliza para cerrar el grupo actual creado por console.group().
+
+// console.groupCollapsed() es similar a console.group(), pero en lugar de mostrar todos los mensajes del grupo en la consola, muestra solo un resumen del grupo y lo colapsa por defecto, lo que significa que los mensajes dentro del grupo estarán ocultos en un primer momento. Al hacer clic en el resumen del grupo, se expande para mostrar los mensajes completos. Esta función es útil para reducir el desorden en la consola y para grupos con muchos mensajes o grupos que se abren automáticamente al cargar la página.
