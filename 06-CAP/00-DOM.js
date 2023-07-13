@@ -1,0 +1,3 @@
+// El DOM (Document Object Model) es una representación jerárquica del contenido de una página web en forma de objetos, que permite acceder y manipular dinámicamente los elementos de una página mediante lenguajes de programación como JavaScript.
+
+// Cada elemento HTML en una página web es representado por un nodo en el árbol del DOM. Los nodos del DOM son objetos que contienen información sobre los elementos de la página, como su contenido y atributos, y proporcionan métodos para acceder y manipular esos elementos dinámicamente a través de scripts. Los nodos del DOM también pueden representar otros tipos de elementos en la página, como comentarios y texto sin formato.
